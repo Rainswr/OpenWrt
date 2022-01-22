@@ -15,6 +15,8 @@ linuxVersionAll=$(head -1 include/kernel-5.10)
 linuxVersion="5.10"$(echo ${linuxVersionAll#*=})
 #新建临时目录
 #mkdir tmp
+ls dll
+cat include/kernel-5.10
 #下载驱动文件
 wget -P dll https://github.com/Rainswr/i350/releases/download/v1.0.0/igb-5.8.5.tar.gz
 #解压驱动文件到临时目录
