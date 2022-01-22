@@ -21,5 +21,5 @@ sed -i 's/).1/).10/g' package/base-files/files/bin/config_generate
 rm -rf package/lean/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
-wget -P dll https://github.com/Rainswr/i350/releases/download/v1.0.0/linux-5.11.16.tar.xz
-sed -i 's/21163681d130cbce5a6be39019e2c69e44f284855ddd70b1a3bd039249540f43/0fefbe94e68b0ce15094b5f81761ad8252e9920c3cf3877b929576f72b7ca48e/g' package/network/utils/bpftools/Makefile
+#wget -P dll https://github.com/Rainswr/i350/releases/download/v1.0.0/linux-5.11.16.tar.xz
+#sed -i 's/21163681d130cbce5a6be39019e2c69e44f284855ddd70b1a3bd039249540f43/0fefbe94e68b0ce15094b5f81761ad8252e9920c3cf3877b929576f72b7ca48e/g' package/network/utils/bpftools/Makefile
