@@ -17,15 +17,15 @@ linuxVersion="5.10"$(echo ${linuxVersionAll#*=})
 #mkdir tmp
 ls dl
 #下载驱动文件
-wget -P dl https://github.com/Rainswr/i350/releases/download/v1.0.0/igb-5.8.5.tar.gz
+wget -P dl https://github.com/Rainswr/i350/releases/download/v1.0.0/igb-5.5.2.tar.gz
 #解压驱动文件到临时目录
-tar -xzvf dl/igb-5.8.5.tar.gz -C tmp
+tar -xzvf dl/igb-5.5.2.tar.gz -C tmp
 #解压内核文件到临时目录并进入临时目录删除原本驱动文件并返回原来目录
 tar -Jxf dl/linux-$linuxVersion.tar.xz -C tmp && cd tmp/linux-$linuxVersion/drivers/net/ethernet/intel/igb && rm -rf * && cd ../../../../../../../
 #移动新的驱动文件到内核
-mv -f tmp/igb-5.8.5/src/* tmp/linux-$linuxVersion/drivers/net/ethernet/intel/igb
+mv -f tmp/igb-5.5.2/src/* tmp/linux-$linuxVersion/drivers/net/ethernet/intel/igb
 #删除驱动缓存和旧的内核文件
-rm -rf dl/linux-$linuxVersion.tar.xz && rm -rf tmp/igb-5.8.5
+rm -rf dl/linux-$linuxVersion.tar.xz && rm -rf tmp/igb-5.5.2
 #再次进入临时目录并打包内核
 cd tmp && tar -Jcf ../dl/linux-$linuxVersion.tar.xz linux-$linuxVersion --remove-files && cd ..
 #获取新打包内核哈希并更新至文件
