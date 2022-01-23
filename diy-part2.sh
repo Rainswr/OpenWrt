@@ -21,3 +21,6 @@ sed -i 's/).1/).10/g' package/base-files/files/bin/config_generate
 rm -rf package/lean/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+
+#更改内核
+sed -i 's/5.10/5.4/g' target/linux/x86/Makefile
