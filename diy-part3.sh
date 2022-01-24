@@ -10,4 +10,4 @@
 # Description: OpenWrt DIY script part 3 (After Download package)
 #
 
-wget -o target/linux/x86/patches-5.10/585-igb.5.8.5.patch https://github.com/Rainswr/i350/releases/download/v1.0.0/585-igb.5.8.5_5.10.patch
+wget -O target/linux/x86/patches-5.10/785-igb.5.8.5.patch https://raw.githubusercontent.com/Rainswr/i350/master/patch/5.10/785-igb-5.8.5.patch
