@@ -28,4 +28,4 @@ sed -i 's/5.10/5.4/g' target/linux/x86/Makefile
 #igb-intel
 sed -i 's/@PCI_SUPPORT +kmod-i2c-core/@LINUX_5_15 @PCI_SUPPORT +kmod-i2c-core/g' package/kernel/linux/modules/netdevices.mk
 sed -i 's/kmod-igb/kmod-igb kmod-igb-intel/g' target/linux/x86/Makefile
-sed -i 's/kmod-igb/kmod-igb-intel/g' target/linux/x86/image/64.mk
+#sed -i 's/kmod-igb/kmod-igb-intel/g' target/linux/x86/image/64.mk
