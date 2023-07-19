@@ -25,4 +25,4 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 #sed -i 's/21163681d130cbce5a6be39019e2c69e44f284855ddd70b1a3bd039249540f43/0fefbe94e68b0ce15094b5f81761ad8252e9920c3cf3877b929576f72b7ca48e/g' package/network/utils/bpftools/Makefile
 
 #更改内核
-sed -i 's/5.10/5.4/g' target/linux/x86/Makefile
+#sed -i 's/5.10/5.4/g' target/linux/x86/Makefile
