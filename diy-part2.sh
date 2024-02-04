@@ -26,3 +26,6 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 
 #更改内核
 #sed -i 's/5.10/5.4/g' target/linux/x86/Makefile
+
+#smartdns
+git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
